@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Dungeon Maths</title>
+    <title>About Dungeon Maths</title>
 
     <meta name="description" content="A Game About Dungeons, Monsters and ...Maths ?">
     <meta name="author" content="Binary Bytes">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="dxl8lY2AQIucQE4opSiTkgnlhgabiWotz6ongzxDVjw" />
 
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Merriweather:700" rel="stylesheet">
     <link rel="stylesheet" href="css/stylesheet.min.css">
     <link rel="shortcut icon" href="img/logo.png">
@@ -20,13 +21,11 @@
     <div class="superhero">
         <img class="logo" src="img/logo.png" alt="Dungeon Maths Logo" width="1000" height="1000">
         <img class="intro-bottom" src="img/intro-bottom.svg" alt="Distressed Content Seperator">
-        <div id="quotes">
-            <p>Educational</p>
-            <p>Fun</p>
-            <p>Many Features</p>
-            <p>Many Levels</p>
-            <p>Best Time Killer</p>
-        </div>
+
+        <h6 class="one">
+            <span style="color: white" class="txt-rotate" data-period="2000" data-rotate='[ "Educational", "Fun", "Entertaining", "Many Levels", "Best Time Killer" ]'></span>
+        </h6>
+
         <h1>Now Available</h1>
         <a class="googleplay" href='https://play.google.com/store/apps/details?id=com.binarybytes.dungeonmaths' target="_blank"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' /></a>
     </div>
@@ -155,8 +154,54 @@
         </div>
     </footer>
 
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+        .one {
+            margin: 0.4em 0;
+        }
+        
+        .one span {
+            border-right: solid 3px #ffd700;
+            white-space: nowrap;
+            overflow: hidden;
+            font-family: 'Source Code Pro', monospace;
+            padding-right: 1px;
+            animation: animated-cursor 700ms steps(29, end) infinite;
+        }
+        
+        @keyframes animated-cursor {
+            0% {
+                border-right-color: #ffd700;
+            }
+            50% {
+                border-right-color: transparent;
+            }
+            50% {
+                border-right-color: transparent;
+            }
+            100% {
+                border-right-color: #ffd700;
+            }
+        }
+        
+        .txt-rotate .wrap {
+            border-right-color: transparent;
+            animation: animated-cursor-two 700ms steps(29, end) infinite;
+        }
+        
+        @keyframes animated-cursor-two {
+            from {
+                border-right-color: transparent;
+            }
+            to {
+                border-right-color: transparent;
+            }
+        }
+    </style>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/app.min.js"></script>
+    <script src="js/typewriter.js"></script>
 </body>
 
 </html>
